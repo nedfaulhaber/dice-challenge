@@ -1,23 +1,94 @@
 body {
   display: flex;
+  justify-content: space-between;
   background-color: #000000;
 }
 
 .first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
   display: flex;
-  height: 200px;
-  width: 200px;
+  justify-content: space-between;
+  height: 175px;
+  width: 175px;
   border: 1px solid #000000;
   border-radius: 20px;
   background-color: red;
   margin: 10px;
+  padding: 20px;
+  position: relative;
+  //  box-shadow: 0 3px 8px rgba(0,0,0,.4);
 }
 
+// .first-face:before, .second-face:before, .third-face:before, .fourth-face:before, .fifth-face:before, .sixth-face:before,
+// .first-face:after, .second-face:after, .third-face:after, .fourth-face:after, .fifth-face:after, .sixth-face:after {
+//   content: '';
+//   position: absolute;
+// }
+//
+// .first-face:before, .second-face:before, .third-face:before, .fourth-face:before, .fifth-face:before, .sixth-face:before {
+//   width: 195px;
+//   height: 195px;
+//   left: 5px;
+//   top: 10px;
+//   background-image: -webkit-linear-gradient(top, #f8ee00 0%, #ffff05 30%, #e8c300 100%);
+//   border-radius: 20px;
+// }
+
 .pip {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  margin: 15px;
   background-color: white;
   display: block;
+  z-index: 100000;
+}
+
+.first-face {
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face {
+  justify-content: space-between;
+  .pip:nth-of-type(2) {
+    align-self: flex-end;
+  }
+}
+
+.third-face {
+  .pip:nth-of-type(2) {
+    align-self: center;
+  }
+  .pip:nth-of-type(3) {
+    align-self: flex-end;
+  }
+}
+
+.fourth-face {
+  justify-content: space-between;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.fifth-face {
+  justify-content: space-between;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .column:nth-of-type(2) {
+    align-self: center;
+  }
+}
+
+.sixth-face {
+  justify-content: space-between;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

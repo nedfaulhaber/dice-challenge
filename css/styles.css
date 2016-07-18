@@ -1,22 +1,63 @@
 body {
   display: flex;
+  justify-content: space-between;
   background-color: #000000; }
 
 .first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
   display: flex;
-  height: 200px;
-  width: 200px;
+  justify-content: space-between;
+  height: 175px;
+  width: 175px;
   border: 1px solid #000000;
   border-radius: 20px;
   background-color: red;
-  margin: 10px; }
+  margin: 10px;
+  padding: 20px;
+  position: relative; }
 
 .pip {
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  margin: 15px;
   background-color: white;
-  display: block; }
+  display: block;
+  z-index: 100000; }
+
+.first-face {
+  justify-content: center;
+  align-items: center; }
+
+.second-face {
+  justify-content: space-between; }
+  .second-face .pip:nth-of-type(2) {
+    align-self: flex-end; }
+
+.third-face .pip:nth-of-type(2) {
+  align-self: center; }
+.third-face .pip:nth-of-type(3) {
+  align-self: flex-end; }
+
+.fourth-face {
+  justify-content: space-between; }
+  .fourth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.fifth-face {
+  justify-content: space-between; }
+  .fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .fifth-face .column:nth-of-type(2) {
+    align-self: center; }
+
+.sixth-face {
+  justify-content: space-between; }
+  .sixth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */
