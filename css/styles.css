@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  background-color: #000000; }
+
+.first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: red;
+  margin: 10px; }
+
+.pip {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 15px;
+  background-color: white;
+  display: block; }
+
+/*# sourceMappingURL=styles.css.map */
