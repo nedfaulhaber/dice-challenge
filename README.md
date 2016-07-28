@@ -1,7 +1,7 @@
 
 # Dice-Challenge
 
-#### By Ned Faulhaber
+#### By Ned Faulhaber and Marty Fitchen
 
 ## Description
 
