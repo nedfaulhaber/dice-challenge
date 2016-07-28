@@ -1,5 +1,4 @@
-# dice-challenge
-EPICODUS LESSON | Create a webpage displaying six sides of a standard six-sided die using Flexbox
+
 # Dice-Challenge
 
 #### By Ned Faulhaber
